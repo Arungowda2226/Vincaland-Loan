@@ -109,11 +109,11 @@ const PersonalDetailsForm = ({ showCheck, markComplete, formData, setFormData })
             </View>
 
             {/* Marital and Gender */}
-            <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginVertical: 10 }}>
-                <View style={{ flex: 1, marginRight: 10, flexDirection: "row", alignItems: "center" }}>
+            <View style={{ alignItems: "center", justifyContent: "space-between", marginVertical: 10,flexDirection:"row" }}>
+                <View style={{ flex: 1, marginRight: 10, marginVertical:10 }}>
                     <Text style={{ fontWeight: "600", fontSize: 11 }}>Marital Status:</Text>
                     <Dropdown
-                        style={styles.dropdown}
+                        style={[styles.dropdown, { width: 100 }]}
                         data={maritalStatusOptions}
                         labelField="label"
                         valueField="value"
@@ -122,10 +122,10 @@ const PersonalDetailsForm = ({ showCheck, markComplete, formData, setFormData })
                         onChange={(item) => setMaritalStatus(item.value)}
                     />
                 </View>
-                <View style={{ flex: 1, flexDirection: "row", alignItems: "center", marginLeft: 20 }}>
+                <View style={{ flex: 1, marginLeft: 20 }}>
                     <Text style={{ fontWeight: "600", fontSize: 11 }}>Gender:</Text>
                     <Dropdown
-                        style={styles.dropdown}
+                        style={[styles.dropdown, { width: 80 }]}
                         data={genderOptions}
                         labelField="label"
                         valueField="value"
@@ -263,7 +263,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
         paddingVertical: 8,
         backgroundColor: '#fff',
-        width: 98
+        marginTop:5
     },
     dropdownShort: {
         width: 80,

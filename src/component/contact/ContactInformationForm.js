@@ -54,7 +54,7 @@ const ContactInformationForm = ({ showCheck, markComplete, setFormData }) => {
           style={{ flex:1 }} 
           placeholder='Enter Mobile Number'
           keyboardType="phone-pad"
-          value={`${callingCode}${phoneNumber}`}
+          value={phoneNumber}
           onChangeText={setPhoneNumber}
         />
       </View>

@@ -44,7 +44,7 @@ const EmploymentDetailsForm = ({ showCheck, markComplete, formData, setFormData 
                 <View style={[styles.inputContainer, { flexDirection: "row", alignItems: "center", justifyContent: "space-between" }]}>
                     <Text style={{ fontWeight: "900", fontSize: 16, marginHorizontal: 15 }}>₹</Text>
                     <View style={{ borderWidth: 1, borderColor: "black", height: 30 }} />
-                    <TextInput style={{ width: 180, marginRight: 10 }} placeholder='10,00,000' onChangeText={(sal) => setSalary(sal)} />
+                    <TextInput style={{ marginRight: 10, width: "50%", }} placeholder='10,00,000' onChangeText={(sal) => setSalary(sal)} />
                 </View>
             </View>
             <Pressable style={styles.button} onPress={handleNext}>
